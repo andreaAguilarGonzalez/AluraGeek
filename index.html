@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Referencia de la hoja de estilo de Css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <!-- Fonte del Proyecto Raleway -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title> AluraGeek</title>
+</head>
+<body>
+    <!-- Sección del Menú  -->
+    <section class="header">
+        <header class="menu_header">
+            <img src="/ima/logo.png">
+            <h1>AluraGeek</h1>
+        </header>
+    </section>
+
+    <main>
+    <section class="caja_main">
+        <div class="caja_productos">
+            <h1 class="title_cajas">MIS PRODUCTOS:</h1>
+            <div class="items_productos" data-lista></div>
+        </div>
+        <div class="caja_agregar">
+            <h1 class="title_cajas">AGREGAR PRODUCTO:</h1>
+            <form class="principal__formulario" data-formulario>
+                
+                <fieldset class="formulario__campo">
+                  <label class="campo__etiqueta" for="nombre">Nombre</label>
+                  <input
+                    name="nombre"
+                    id="nombre"
+                    class="campo__completo"
+                    type="text"
+                    minlength="3"
+                    required
+                    data-nombre
+                  />
+                  
+                </fieldset>
+      
+                
+                <fieldset class="formulario__campo">
+                  <label class="campo__etiqueta" for="precio"
+                    >Precio (Solo números)</label
+                  >
+                  <input
+                    name="precio"
+                    id="precio"
+                    class="campo__completo"
+                    type="number"
+                    minlength="11"
+                    maxlength="13"
+                    required
+                    data-precio
+                  />
+                  
+                </fieldset>
+                
+                <fieldset class="formulario__campo">
+                    <label class="campo__etiqueta" for="imagen"
+                      >Imagen</label
+                    >
+                    <input
+                      name="imagen"
+                      id="imagen"
+                      class="campo__completo"
+                      type="text"
+                      required
+                      data-imagen
+                    />
+                    
+                  </fieldset>
+                
+      
+                <div class="botones">
+                  <input
+                    value="Enviar"
+                    class="formulario__boton"
+                    id="enviar"
+                    data-boton-enviar
+                    type="submit"
+                  />
+                  
+
+                  <input
+                    value="Limpiar"
+                    class="formulario__boton boton_blanco"
+                    id="enviar"
+                    data-boton-limpiar
+                    type="reset"
+                  />
+                  
+                </div>
+
+                
+
+              </form>
+        </div>
+    </section>
+    </main>
+    <script src="./js/mostrarTarjeta.js" type="module"></script>
+    <script src="./js/crearTarjeta.js" type="module"></script>
+    <script src="./js/eliminarTarjeta.js" type="module"></script>
+</body>
+<footer class="footer_caja_seperior">
+  <section class="header">
+    <div class="footer_caja">
+        <img src="/ima/logo.png">
+        <h1>AluraGeek</h1>
+    </div>
+    <p class="pes">Desarollado por Andrea Aguilar</p>
+    <p class="pes">Alura Latam- 2024</p>
+  </section>
+</footer>
+</html>

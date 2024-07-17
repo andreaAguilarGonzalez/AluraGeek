@@ -1,0 +1,211 @@
+:root{
+   --cor-de-fondo: #FFF;
+   --cor-de-link: #000;
+   --cor-de-tema: #03318C;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fondo) ;
+    font-family: "Press Start 2P", system-ui;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/*Section Header*/
+
+.header{
+    background-color: #5300C8;
+    font-family: "Press Start 2P", system-ui;
+}
+
+.menu_header{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #FFF;
+}
+
+/*Section Main*/
+
+
+.caja_main{
+    display: flex;
+    margin: 20px;
+    border-style: solid;
+    border-radius: 10px;
+    /*justify-content: space-between;*/
+}
+
+.title_cajas{
+    text-align: center;
+}
+
+.items_productos{
+    width: 100%;
+    flex-direction: row-reverse ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.caja_productos{
+    width: 60%;
+    margin: 40px;
+    margin-right: 70px;
+}
+
+.caja_agregar{
+    width: 30%;
+    margin: 40px;
+}
+
+/* Card */
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 196px;
+    height: 280px;
+    background-color: #5D04D9;
+    border-radius: 10px;
+    border: 1px slid #000;
+    margin: 17px;
+    color: #FFF;
+    border-style: solid;  
+    border-color: #000;
+}
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+
+  .ima_caja{
+    padding: 10px 10px;
+    width: 176px;
+    height: 174px;
+  }
+  
+  .boton_delete{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+  }
+
+
+/*formulario*/
+
+.tarjeta_item{
+    
+}
+
+.formulario__campo {
+    margin-bottom: 2em;
+    border: none;
+}
+
+.campo__etiqueta {
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.campo__completo {
+    display: block;
+    border: 2px solid var(--cor-de-tema);
+    border-radius: 20px;
+    width: 100%;
+    padding: 1em;
+    margin-top: .5em;
+
+}
+
+.formulario__boton {
+    background: var(--cor-de-tema);
+    margin: 2em auto;
+    display: block;
+    border: none;
+    padding: 1em 4em;
+    border-radius: 10px;
+    font-size: 10px;
+    line-height: 22px;
+    color: var(--cor-de-fondo);
+    font-family: "Press Start 2P", system-ui;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.boton_blanco{
+    background: var(--cor-de-fondo);
+    color: var(--cor-de-tema);
+    border-style: solid;  
+}
+.videos__item {
+    flex-grow: 1;
+    height: 303px;
+    width: 300px;
+}
+
+/*Footer*/
+footer{
+    background-color:  var(--cor-de-tema);
+    background-color: #5300C8;
+    font-family: "Press Start 2P", system-ui;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer_caja{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #FFF;
+    
+}
+
+.pes{
+    text-align: center; 
+    color: white; 
+    font-size: 12px;
+}
+
+@media (max-width: 425px) {
+    .caja_main{
+        flex-direction: column-reverse;
+        border: none;
+    }
+
+    .menu_header{
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        color: #FFF;
+    }
+
+
+    .campo__completo {
+        display: block;
+        border: 2px solid var(--cor-de-tema);
+        border-radius: 20px;
+       
+
+    }
+
+    .botones{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+}
